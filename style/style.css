@@ -7,12 +7,18 @@
     color: white;
 
 }
-
+p{
+    color: var(--secend-color);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 15px;
+}
 body {
     background-color: rgba(0, 0, 0, 0.841);
     font-family: "Inter", sans-serif;
 }
-main{
+
+main {
     background-color: black;
 }
 
@@ -44,13 +50,16 @@ main{
     padding: 50px 190px 30px;
 
 }
-.navbar > h2{
+
+.navbar>h2 {
     font-size: 2.1rem;
     font-weight: 800;
 }
-.fa-bars{
+
+.fa-bars {
     display: none;
 }
+
 .menu-bar {
     display: flex;
     gap: 50px;
@@ -110,7 +119,7 @@ main{
     font-weight: 100;
 }
 
-.banner-contant > p{
+.banner-contant>p {
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 30px;
@@ -138,16 +147,19 @@ main{
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
 }
-.banner-card-1> p{
+
+.banner-card-1>p {
     color: var(--secend-color);
     font-size: 1rem;
     font-weight: 400;
 }
-.banner-card-2>p{
+
+.banner-card-2>p {
     color: var(--secend-color);
     font-size: 1rem;
     font-weight: 400;
 }
+
 .banner-card-2 {
     position: absolute;
     top: 40%;
@@ -158,18 +170,21 @@ main{
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
 }
+
 /* banner section end */
 /* change habits section style start */
-.habits{
+.habits {
     text-align: center;
     padding: 100px;
 }
-.habits > h2{
+
+.habits>h2 {
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 14px;
 }
-.habits > p{
+
+.habits>p {
     display: block;
     margin: 0 auto;
     max-width: 500px;
@@ -178,81 +193,164 @@ main{
     font-size: 1rem;
     font-weight: 400;
 }
-.habits-section{
+
+.habits-section {
     display: flex;
     justify-content: space-evenly;
 }
-.change-habit-style{
+
+.change-habit-style {
     width: 230px;
+    margin-bottom: 20px;
 }
-.change-habit-style > img{
+
+.change-habit-style>img {
     border-radius: 50%;
     border: 1px solid white;
     margin-bottom: 25px;
 }
-.change-habit-style>p{
+
+.change-habit-style>p {
     color: var(--secend-color);
     margin-top: 10px;
     font-size: 1rem;
     font-weight: 400;
 }
+
 /* change habits section style end */
+/* run habits section start */
+.run-habits {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    background: rgb(34, 34, 34);
+}
+
+.run-habits-contant {
+    padding: 40px 55px;
+}
+
+.run-habits-contant>h2 {
+    font-size: 3rem;
+    font-weight: 900;
+
+}
+
+.run-habits-image {
+    width: 50%;
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+}
+
+.run-habits-image>img {
+    max-width: 366px;
+    height: 312px;
+    border-radius: 50px;
+}
+.run-habits-contant > button{
+    margin-top: 50px;
+    padding: 15px 60px;
+}
+/* run habits section end */
 /* mobile veiw responsive section */
 @media screen and (max-width:576px) {
+
     /* navbar section */
-    .navbar > ul{
+    .navbar>ul {
         display: none;
     }
-    .navbar{
+
+    .navbar {
         padding: 35px 30px;
     }
-    .fa-bars{
+
+    .fa-bars {
         display: block;
         font-size: 30px;
     }
+
     /* banner section */
-    .banner{
+    .banner {
         flex-direction: column;
     }
-    .banner-contant{
-        padding:20px;
+
+    .banner-contant {
+        padding: 20px;
     }
-    .banner-contant > h1{
-        font-size: 36px ;
+
+    .banner-contant>h1 {
+        font-size: 36px;
         line-height: 40px;
-        margin-bottom:25px ;
+        margin-bottom: 25px;
     }
-    .banner-contant > h1 > span{
+
+    .banner-contant>h1>span {
         font-size: 50px;
         font-weight: 100;
     }
-    .btn{
+
+    .btn {
         padding: 15px 20px;
     }
-    .banner-bg-image{
+
+    .banner-bg-image {
         padding: 0px;
         margin: -90px;
     }
-    .banner-card-2{
+
+    .banner-card-2 {
         padding: 15px;
-        top: 54%;
+        top: 58%;
         right: 5%;
     }
-    .banner-card-1{
-        padding: 15px ;
-        top: 74%;
-        right: 40%;
+
+    .banner-card-1 {
+        padding: 15px;
+        top: 84%;
+        right: 50%;
     }
+
     /* change habits section */
-    .habits{
-        padding:100px 20px 20px 20px;
+    .habits {
+        padding: 100px 20px 20px 20px;
     }
-    .habits-section{
+
+    .habits-section {
         flex-direction: column;
         align-items: center;
     }
-    .habits>h2{
+
+    .habits>h2 {
         font-size: 2rem;
+    }
+    /* run habits section */
+    .run-habits{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .run-habits-contant{
+        padding: 30px;
+    }
+    .run-habits-contant > h2{
+        font-size: 2rem;
+        font: 300;
+    }
+    .run-habits-contant > button{
+        margin-top: 20px;
+    }
+    .run-habits-image{
+        width: 90%;
+        margin: 0 auto;
+        justify-content: center;
+        border-radius: 20px;
+    }
+    .run-habits-image > img{
+        width: 100%;
+        height: 100%;
+        padding: 20px;
     }
 }
 
