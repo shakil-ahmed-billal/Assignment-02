@@ -7,12 +7,13 @@
     color: white;
 
 }
-p{
+
+p {
     color: var(--secend-color);
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 15px;
 }
+
 body {
     background-color: rgba(0, 0, 0, 0.841);
     font-family: "Inter", sans-serif;
@@ -238,11 +239,16 @@ main {
 
 }
 
+.run-habits-contant>p {
+    margin-top: 20px;
+}
+
 .run-habits-image {
     width: 50%;
     margin: 20px;
     border-radius: 20px;
     display: flex;
+    justify-content: end;
 }
 
 .run-habits-image>img {
@@ -250,11 +256,107 @@ main {
     height: 312px;
     border-radius: 50px;
 }
-.run-habits-contant > button{
-    margin-top: 50px;
+
+.run-habits-contant>button {
+    margin-top: 30px;
     padding: 15px 60px;
 }
+
 /* run habits section end */
+/* bmi calculator section start */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator>h1 {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.calculator>p {
+    text-align: center;
+    margin: 15px 0px 90px 0px;
+
+}
+
+.calculator-section {
+    background: rgb(34, 34, 34);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.calculator-chart{
+    margin-left: 190px;
+}
+.calculator-chart>h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 50px 0px;
+}
+.calculator-chart>table {
+    border-collapse: collapse;
+    margin-bottom: 100px;
+}
+
+.calculator-chart td {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    color: var(--secend-color);
+}
+.calculator-chart th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    color:rgb(216, 208, 208);
+}
+.calculator-bmi-contant>h3 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 50px 0 14px 0;
+}
+.calculator-bmi-contant>p{
+    margin-bottom: 30px;
+}
+.calculator-bmi>input {
+    padding: 12px 40px 12px 20px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 5px;
+    border: none;
+}
+
+#gender {
+    padding: 12px 147px 12px 20px;
+    margin-left: 5px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: var(--secend-color);
+}
+
+#activity {
+    padding: 12px 150px 12px 164px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 35px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: var(--secend-color);
+}
+.calculator-bmi>button{
+    margin-left: 10px;
+    padding: 13px 40px;
+}
+.calculator-bmi-contant{
+    max-width: 550px;
+}
+/* bmi calculator section start */
 /* mobile veiw responsive section */
 @media screen and (max-width:576px) {
 
@@ -326,31 +428,83 @@ main {
     .habits>h2 {
         font-size: 2rem;
     }
+
     /* run habits section */
-    .run-habits{
+    .run-habits {
         flex-direction: column;
         margin: 0 auto;
     }
-    .run-habits-contant{
+
+    .run-habits-contant {
         padding: 30px;
     }
-    .run-habits-contant > h2{
+
+    .run-habits-contant>h2 {
         font-size: 2rem;
         font: 300;
     }
-    .run-habits-contant > button{
+
+    .run-habits-contant>button {
         margin-top: 20px;
     }
-    .run-habits-image{
+
+    .run-habits-image {
         width: 90%;
         margin: 0 auto;
         justify-content: center;
         border-radius: 20px;
     }
-    .run-habits-image > img{
+
+    .run-habits-image>img {
         width: 100%;
         height: 100%;
         padding: 20px;
+    }
+    /* calculator-bmi section*/
+    .calculator>h1{
+        font-size: 2rem;
+        font-weight: 900;
+    }
+    .calculator-section{
+        flex-direction: column;
+    }
+    .calculator-chart{
+        margin: 0 auto;
+    }
+    .calculator-chart > table{
+        margin-bottom: 50px;
+    }
+    .calculator-bmi{
+        padding: 3px;
+        margin-left: 10px;
+        align-items: center;
+    }
+    .calculator-bmi-contant{
+        padding-left: 10px;
+    }
+    .calculator-bmi> input{
+        padding: 12px 0px 12px 0px;
+        text-align: center;
+        margin: 2px;
+    }
+    #gender{
+        padding: 12px 0px 12px 107px;
+        text-align: center;
+        margin: 2px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #activity{
+        padding: 12px 120px 12px 67px;
+        margin: 2px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .calculator-bmi>button{
+        margin-top: 20px;
+    }
+    .calculator-bmi-contant>h3{
+        margin-top: 10px;
     }
 }
 
