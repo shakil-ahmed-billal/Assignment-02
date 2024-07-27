@@ -375,6 +375,9 @@ main {
 
 /* bmi calculator section start */
 /* our team section start */
+.our-team{
+    padding-bottom: 90px;
+}
 .our-team>h2{
     font-size: 2.5rem;
     text-align: center;
@@ -422,6 +425,38 @@ main {
     left: 10%;
 }
 /* our team section end */
+/* footer section style now */
+.footer-box{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 60px 190px 30px;
+
+}
+.footer-contant>h2{
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.footer-box p{
+    margin-bottom: 20px;
+}
+.footer>p{
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.footer>hr{
+    margin: 40px 190px 35px;
+}
+.footer-contant2{
+    max-width: 440px;
+    height: auto;
+}
+.footer-contant2>p{
+    margin-top: 20px;
+}
+/* footer section style end */
 /* mobile veiw responsive section */
 @media screen and (max-width:576px) {
 
@@ -590,6 +625,25 @@ main {
         max-width: 320px;
         padding: 20px 0px;
     }
+    /* footer section start */
+    .footer-box{
+        flex-direction: column;
+        padding: 0;
+        padding-left: 30px;
+        padding-top: 50px;
+    }
+    .footer-contant{
+        align-items: center;
+    }
+    .footer>hr{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .footer-contant2{
+        width:100%;
+        height: auto;
+    }
+
 }
 
 /* mobile veiw responsive section */
