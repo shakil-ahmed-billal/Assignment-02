@@ -270,6 +270,91 @@ main {
 }
 
 /* run habits section end */
+/* training style section style start */
+.training-container{
+    margin: 0 auto;
+    width: 80%;
+}
+.training-container>h1{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 100px;
+}
+.training-container>p{
+    font-size: 1rem;
+    margin-bottom: 60px;
+}
+.training-style-box{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.training-style-box2{
+    display: grid;
+    grid-template-columns:40% 25% 35%;
+}
+.training-items>img{
+    width: 100%;
+    height:100%;
+}
+.training-items{
+    position: relative;
+}
+.training-items>p{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    top: 50%;
+    right: 50%;
+}
+.img-1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(6, 255, 210, 0.5);
+    z-index: 1;
+    top: 0%;
+}
+.img-2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(255, 0, 0, 0.3);
+    z-index: 1;
+    top: 0%;
+}
+.img-3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    top: 0%;
+}
+.img-4{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    top: 0%;
+}
+.img-5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(66, 255, 0, 0.3);
+    z-index: 1;
+    top: 0%;
+}
+.img-6{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 71, 255, 0.3);
+    z-index: 1;
+    top: 0%;
+}
+/* training style section style end */
 /* bmi calculator section start */
 .calculator {
     display: flex;
@@ -560,6 +645,24 @@ main {
         height: 100%;
         padding: 20px;
     }
+    /* training section */
+    .training-container{
+        width: 95%;
+    }
+    .training-container>h1{
+        font-size: 2rem;
+        margin-top: 70px;
+    }
+    .training-container>p{
+        font-size: 1rem;
+    }
+    .training-style-box{
+        grid-template-columns: 45% 55% 0%;
+    }
+    .training-style-box2{
+        grid-template-columns: 55% 45% 0%;
+    }
+
 
     /* calculator-bmi section*/
     .calculator>h1 {
@@ -611,6 +714,7 @@ main {
 
     .calculator-bmi>button {
         margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .calculator-bmi-contant>h3 {
