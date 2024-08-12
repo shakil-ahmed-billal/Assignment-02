@@ -130,18 +130,15 @@ main {
 .banner-image {
     display: flex;
     padding-top: 100px;
-
-}
-
-.banner-bg-image {
     position: relative;
-    padding-right: 18rem;
-}
+    padding-right: 14rem;
+    padding-left: 4rem;
 
+}
 .banner-card-1 {
     position: absolute;
     top: 75%;
-    right: 32%;
+    left: 1%;
     padding: 20px 25px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -170,8 +167,8 @@ main {
 
 .banner-card-2 {
     position: absolute;
-    top: 40%;
-    right: 13%;
+    top: 30%;
+    right: 30%;
     padding: 20px 25px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
@@ -226,6 +223,63 @@ main {
 }
 
 /* change habits section style end */
+/* unique section style start now */
+.unique-part{
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.unique-part>h1{
+    font-size: 5rem;
+    background: linear-gradient(180.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0.38));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+.unique-part>h1>i{
+    color: var(--btn);
+}
+.unique-img{
+    margin: 0 auto;
+    width: 1000px;
+    height: 300px;
+    background: url(../images/unique-img.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 500px;
+    position: relative;
+    z-index: 1;
+}
+.unique-section{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 300px;
+}
+.unique-contant{
+    position: absolute;
+    width: 1000px;
+    min-height: 300px;
+    background: #323232;
+    border-radius: 500px;
+    top: 50%;
+}
+.unique-contant>p{
+    margin-top: 200px ;
+    font-size: 1.5rem;
+}
+.unique-contant>button{
+    background: none;
+    border: none;
+    margin-left: 70%;
+}
+.unique-contant>button>i{
+    color: var(--btn);
+    font-size: 3rem;
+}
+/* unique section style start start */
 /* run habits section start */
 .run-habits {
     width: 80%;
@@ -279,6 +333,7 @@ main {
     font-size: 3rem;
     font-weight: 900;
     margin-top: 100px;
+    margin-bottom: 15px;
 }
 .training-container>p{
     font-size: 1rem;
@@ -582,22 +637,18 @@ main {
     .btn {
         padding: 15px 20px;
     }
-
-    .banner-bg-image {
-        padding: 0px;
-        margin: -90px;
+    .banner-image{
+        padding: 0;
     }
-
     .banner-card-2 {
         padding: 15px;
-        top: 58%;
-        right: 5%;
+        top: 18%;
+        right: 2%;
     }
 
     .banner-card-1 {
         padding: 15px;
-        top: 84%;
-        right: 50%;
+        top: 70%;
     }
 
     /* change habits section */
@@ -613,7 +664,33 @@ main {
     .habits>h2 {
         font-size: 2rem;
     }
-
+    /* unique section  */
+    .unique-part{
+        margin: 0 auto;
+        /* width: 100%; */
+    }
+    .unique-section{
+        margin-bottom: 200px;
+    }
+    .unique-part>h1{
+        font-size: 2.5rem;
+        margin-top: 30px;
+    }
+    .unique-part>h1>br{
+        display: none;
+    }
+    .unique-img{
+        max-width: 300px;
+        height: 150px;
+    }
+    .unique-contant {
+        max-width: 300px;
+        min-height: 150px;
+    }
+    .unique-contant>p{
+        font-size: 0.9rem;
+        margin-top: 80px;
+    }
     /* run habits section */
     .run-habits {
         flex-direction: column;
@@ -628,7 +705,9 @@ main {
         font-size: 2rem;
         font: 300;
     }
-
+    .run-habits-contant>p > br{
+        display: none;
+    }
     .run-habits-contant>button {
         margin-top: 20px;
     }
@@ -652,9 +731,13 @@ main {
     .training-container>h1{
         font-size: 2rem;
         margin-top: 70px;
+        margin-left: 10px;
+
     }
     .training-container>p{
         font-size: 1rem;
+        margin-left: 10px;
+
     }
     .training-style-box{
         grid-template-columns: 45% 55% 0%;
@@ -693,12 +776,14 @@ main {
 
     .calculator-bmi>input {
         padding: 12px 0px 12px 0px;
+        width: 40%;
         text-align: center;
         margin: 2px;
     }
 
     #gender {
-        padding: 12px 0px 12px 107px;
+        padding: 12px 0px 12px 10px;
+        width: 40%;
         text-align: center;
         margin: 2px;
         margin-bottom: 10px;
@@ -706,13 +791,15 @@ main {
     }
 
     #activity {
-        padding: 12px 120px 12px 67px;
+        padding: 12px 0px 12px 67px;
+        width: 82%;
         margin: 2px;
         text-align: center;
         margin-top: 10px;
     }
 
     .calculator-bmi>button {
+        padding: 10px 20px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
