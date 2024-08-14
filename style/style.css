@@ -310,12 +310,14 @@ main {
     border-radius: 20px;
     display: flex;
     justify-content: end;
+    
 }
-
 .run-habits-image>img {
-    max-width: 366px;
+    width: 366px;
     height: 312px;
-    border-radius: 50px;
+    border-radius: 20px;
+    object-fit: cover;
+
 }
 
 .run-habits-contant>button {
@@ -350,6 +352,7 @@ main {
 .training-items>img{
     width: 100%;
     height:100%;
+    object-fit: cover;
 }
 .training-items{
     position: relative;
@@ -553,6 +556,7 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 18px;
+    object-fit: cover;
 }
 .parson{
     position: absolute;
@@ -844,7 +848,6 @@ main {
     .hiden-part{
         display: none;
     }
-
+    /* share style end part */
 }
-
 /* mobile veiw responsive section */
